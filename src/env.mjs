@@ -8,6 +8,11 @@ export const env = createEnv({
    */
   server: {
     DATABASE_URL: z.string().url(),
+    AWS_ACCES_KEY: z.string(),
+    AWS_SECRET: z.string(),
+    AWS_S3_BUCKET_NAME: z.string(),
+    SENDGRID_API_KEY: z.string(),
+    MAIL_FROM_ADDRESS: z.string(),
     NODE_ENV: z.enum(["development", "test", "production"]),
   },
 
@@ -27,6 +32,11 @@ export const env = createEnv({
   runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,
+    AWS_ACCES_KEY: process.env.AWS_ACCES_KEY,
+    AWS_S3_BUCKET_NAME: process.env.AWS_S3_BUCKET_NAME,
+    SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
+    MAIL_FROM_ADDRESS: process.env.MAIL_FROM_ADDRESS,
+    AWS_SECRET: process.env.AWS_SECRET,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

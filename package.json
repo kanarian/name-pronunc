@@ -11,14 +11,18 @@
   },
   "dependencies": {
     "@prisma/client": "^5.0.0",
+    "@sendgrid/mail": "^7.7.0",
     "@t3-oss/env-nextjs": "^0.3.1",
     "@tanstack/react-query": "^4.29.7",
     "@trpc/client": "^10.26.0",
     "@trpc/next": "^10.26.0",
     "@trpc/react-query": "^10.26.0",
     "@trpc/server": "^10.26.0",
+    "aws-sdk": "^2.1425.0",
     "next": "^13.4.2",
     "react": "18.2.0",
+    "react-audio-player-component": "^1.2.4",
+    "react-audio-voice-recorder": "^2.1.2",
     "react-dom": "18.2.0",
     "superjson": "1.12.2",
     "zod": "^3.21.4"

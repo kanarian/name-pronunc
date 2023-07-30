@@ -15,3 +15,15 @@ model Example {
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 }
+
+model NamePronunciationEntry {
+    id        String   @id @default(cuid())
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    email     String   @unique
+    firstName String
+    lastName  String
+    validated Boolean  @default(false)
+    token     String   @unique
+    pronunciationUrl String?
+}
